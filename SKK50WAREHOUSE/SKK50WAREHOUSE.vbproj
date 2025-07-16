@@ -1,0 +1,76 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Document.Processor" Version="24.2.3" />
+    <PackageReference Include="DevExpress.Spreadsheet.Core" Version="24.2.3" />
+    <PackageReference Include="DevExpress.Win.Design" Version="24.2.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.0-preview3.24332.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SKK02OBJECTS\SKK02OBJECTS.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DevExpress.Dashboard.v24.2.Core">
+      <HintPath>C:\Program Files\DevExpress 24.2\Components\Bin\NetCore\DevExpress.Dashboard.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v24.2.Win">
+      <HintPath>C:\Program Files\DevExpress 24.2\Components\Bin\NetCore\DevExpress.Dashboard.v24.2.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v24.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.Charts.v24.2.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v24.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v24.2.Extensions">
+      
+    </Reference>
+    <Reference Include="RawPrinterHelper">
+      <HintPath>Class\RawPrinterHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\ucWS25DQ01ORDERMANAGEMENT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Report\ucWS25DQ01ORDERMANAGEMENT.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

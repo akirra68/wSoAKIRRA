@@ -1,0 +1,12 @@
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\bin\Debug\net8.0\SKK03SECURITY.deps.json
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\bin\Debug\net8.0\SKK03SECURITY.dll
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\bin\Debug\net8.0\SKK03SECURITY.pdb
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.csproj.AssemblyReference.cache
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.GeneratedMSBuildEditorConfig.editorconfig
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.AssemblyInfoInputs.cache
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.AssemblyInfo.cs
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.csproj.CoreCompileInputs.cache
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.dll
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\refint\SKK03SECURITY.dll
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\SKK03SECURITY.pdb
+D:\_tp\wSoAKIRRA-master\SKK03SECURITY\obj\Debug\net8.0\ref\SKK03SECURITY.dll

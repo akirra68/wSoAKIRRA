@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <FileVersion>4.0.2</FileVersion>
+	<SelfContained>true</SelfContained>
+	<PublishReadyToRun>true</PublishReadyToRun>
+	<ServerGarbageCollection>true</ServerGarbageCollection>
+	<ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+	<SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
+	<UseWPF>False</UseWPF>
+	<ApplicationIcon>Images\Angel08.ico</ApplicationIcon>
+	<Company>$(s)</Company>
+	<Copyright>AKIRRA</Copyright>
+	<PackageTags></PackageTags>
+	<Description>mrv</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\MERSY.png" />
+    <None Remove="Images\under-dev.png" />
+    <None Remove="Images\wso.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Angel08.ico" />
+    <Content Include="Images\skk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\wso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" Version="24.2.3" />
+    <PackageReference Include="DevExpress.Win.Design" Version="24.2.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.0-preview3.24332.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SKK01CORE\SKK01CORE.vbproj" />
+    <ProjectReference Include="..\SKK02OBJECTS\SKK02OBJECTS.vbproj" />
+    <ProjectReference Include="..\SKK03SECURITY\SKK03SECURITY.csproj" />
+    <ProjectReference Include="..\SKK04USER\SKK04USER.vbproj" />
+    <ProjectReference Include="..\SKK40MERCHANDISE\SKK40MERCHANDISE.vbproj" />
+    <ProjectReference Include="..\SKK50WAREHOUSE\SKK50WAREHOUSE.vbproj" />
+    <ProjectReference Include="..\wSo\wSo.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+	
+	<Target Name="RemoveLocalizationFolders" AfterTargets="Build">
+		<ItemGroup>
+			<_FoldersToDelete Include="$(OutputPath)cs" />
+			<_FoldersToDelete Include="$(OutputPath)pl" />
+			<_FoldersToDelete Include="$(OutputPath)de" />
+			<_FoldersToDelete Include="$(OutputPath)es" />
+			<_FoldersToDelete Include="$(OutputPath)fr" />
+			<_FoldersToDelete Include="$(OutputPath)tr" />
+			<_FoldersToDelete Include="$(OutputPath)it" />
+			<_FoldersToDelete Include="$(OutputPath)ja" />
+			<_FoldersToDelete Include="$(OutputPath)ko" />
+			<_FoldersToDelete Include="$(OutputPath)ru" />
+			<_FoldersToDelete Include="$(OutputPath)zh-Hans" />
+			<_FoldersToDelete Include="$(OutputPath)pt-BR" />
+			<_FoldersToDelete Include="$(OutputPath)zh-Hant" />
+		</ItemGroup>
+		<RemoveDir Directories="@(_FoldersToDelete)" />
+	</Target>
+
+</Project>

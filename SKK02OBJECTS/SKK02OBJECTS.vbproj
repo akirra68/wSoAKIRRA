@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SKK02OBJECTS</RootNamespace>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.Design" Version="24.2.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.0-preview3.24332.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SKK01CORE\SKK01CORE.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MDFA\UserControl\ucPivotGridReportTemplate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucGridTransaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS06RadioGroup - Copy.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsUserControl\wsContainer\ucWS24H201PROSESPKB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

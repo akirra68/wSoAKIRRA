@@ -1,0 +1,12 @@
+D:\_tp\wSoAKIRRA-master\SKK01CORE\bin\Debug\net8.0\SKK01CORE.deps.json
+D:\_tp\wSoAKIRRA-master\SKK01CORE\bin\Debug\net8.0\SKK01CORE.dll
+D:\_tp\wSoAKIRRA-master\SKK01CORE\bin\Debug\net8.0\SKK01CORE.pdb
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.vbproj.AssemblyReference.cache
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.GeneratedMSBuildEditorConfig.editorconfig
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.AssemblyInfoInputs.cache
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.AssemblyInfo.vb
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.vbproj.CoreCompileInputs.cache
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.dll
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\refint\SKK01CORE.dll
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\SKK01CORE.pdb
+D:\_tp\wSoAKIRRA-master\SKK01CORE\obj\Debug\net8.0\ref\SKK01CORE.dll
