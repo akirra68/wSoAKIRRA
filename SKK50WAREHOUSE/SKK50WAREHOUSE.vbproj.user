@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Container\ucWS23LE01REPARASILEBUR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS23LN01PKB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24BE01MERGESPLITSKUCONTAINER.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24F101INBOUNDENTRYCONTAINER.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24FS01HASILREPARASIRETURCONTAINER.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24HG01PICKING.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24IX01PKBCONSUMEINBOUND.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS24LD01BULKUPLOADXLS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS25DX01STOCKCHECK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Container\ucWS25WFStore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Print\xr24LE01RP_PickingList.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Print\xr24LE02SRP_PickingList.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Print\xr24LE03RP_SuratJalan.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Print\xr24LE04SRP_SuratJalan.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Print\xr24LE05SRP_Packaging.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS23LH01TrackingSKU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS24B3REPORT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS24IE01LISTPICKING.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS24IE02LISTPICKINGSKU.vb">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS25DX01Store.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS25EF01AgregatSJ.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Report\rptWS25FX01CURRENTSTOCK.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS23KU01MUTASI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS23LL01DISTRIBUSIFINISHGOODS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24BE01MERGESPLITSKU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24FK01TRANSAKSIWAREHOUSE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24FP01INBOUND.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24G301OUTBOUNDPKB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24IJ01SALE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS24JV01CORRECTION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucWS25DQ01ORDERMANAGEMENT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="XtraUserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

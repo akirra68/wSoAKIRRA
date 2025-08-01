@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="MDFA\Repository\ctrlGEMINIMaster.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MDFA\Repository\repoGEMINIDate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MDFA\Repository\repoGEMINIMaster.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MDFA\Repository\repoGEMININumeric.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MDFA\Repository\repoGEMINIPicture.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucGridDetailCatalog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucGridTransactionFinance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucGridTransactionFinanceMini.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucGridTransactionParentChild.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucPivotTransaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucReportGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MDFA\UserControl\ucReportPivot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\ctrlWSNasaMaster.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\ctrlWSNasaSpinEdit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\ctrlWSNasaTextEdit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS01Date.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS02Numeric.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS03Picture.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS04CheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS05Master.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS06RadioGroup.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS07ComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS07ComboBoxAKIRRA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsRepository\repoWS08ProgressBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsUserControl\ucWSGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsUserControl\ucWSGridParentChild.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Warehouse\wsUserControl\ucWSPivot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
