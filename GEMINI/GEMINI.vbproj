@@ -19,6 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Files\ns_MERSY-SQL-ALL.txt" />
+    <None Remove="Files\TEMPLATE_BUP_WSO.xlsx" />
     <None Remove="Images\MERSY.png" />
     <None Remove="Images\under-dev.png" />
     <None Remove="Images\wso.png" />
@@ -26,6 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Files\ns_MERSY-SQL-ALL.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\TEMPLATE_BUP_WSO.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Angel08.ico" />
     <Content Include="Images\skk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

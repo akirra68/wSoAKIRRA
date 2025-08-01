@@ -1,0 +1,157 @@
+-- CHK TOTAL DATA FROM WS DB
+SELECT 'wsTABLE10' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE10
+UNION ALL
+SELECT 'wsTABLE18' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE18
+UNION ALL
+SELECT 'wsTABLE20' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE20
+UNION ALL
+SELECT 'wsTABLE21' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE21
+UNION ALL
+SELECT 'wsTABLE22' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE22
+UNION ALL
+SELECT 'wsTABLE23' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE23
+UNION ALL
+SELECT 'wsTABLE24' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE24
+UNION ALL
+SELECT 'wsTABLE25' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE25
+UNION ALL
+SELECT 'wsTABLE26' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE26
+UNION ALL
+SELECT 'wsTABLE27' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE27
+UNION ALL
+SELECT 'wsTABLE271' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE271
+UNION ALL
+SELECT 'wsTABLE28' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE28
+UNION ALL
+SELECT 'wsTABLE281' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE281
+UNION ALL
+SELECT 'wsTABLE29' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE29
+UNION ALL
+SELECT 'wsTABLE30' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE30
+UNION ALL
+SELECT 'wsTABLE31' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE31
+UNION ALL
+SELECT 'wsTABLE32' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE32
+UNION ALL
+SELECT 'wsTABLE321' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE321
+UNION ALL
+SELECT 'wsTABLE33' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE33
+UNION ALL
+SELECT 'wsTABLE34' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE34
+UNION ALL
+SELECT 'wsTABLE35' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE35
+UNION ALL
+SELECT 'wsTABLE40' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE40
+UNION ALL
+SELECT 'wsTABLE41' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE41
+UNION ALL
+SELECT 'wsTABLE42' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE42
+UNION ALL
+SELECT 'wsTABLE43' AS TableName, COUNT(*) AS TotalRows FROM wsTABLE43
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- CLEAR WS DB
+delete wsTABLE10
+delete wsTABLE18
+delete wsTABLE20
+delete wsTABLE21
+delete wsTABLE22
+delete wsTABLE23
+delete wsTABLE24
+delete wsTABLE25
+delete wsTABLE26
+delete wsTABLE27
+delete wsTABLE271
+delete wsTABLE28
+delete wsTABLE281
+delete wsTABLE29
+delete wsTABLE30
+delete wsTABLE31
+delete wsTABLE32
+delete wsTABLE321
+delete wsTABLE33
+delete wsTABLE34
+delete wsTABLE35
+delete wsTABLE40
+delete wsTABLE41
+delete wsTABLE42
+delete wsTABLE43
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- SELECT ALL
+SELECT * FROM WS..wsTABLE20
+SELECT * FROM WS..wsTABLE21
+SELECT * FROM WS..wsTABLE31
+
+-- SELECT BY PRODUCT CODE
+SELECT * FROM WS..wsTABLE20 WHERE f01String = ''
+SELECT * FROM WS..wsTABLE21 WHERE f21String = ''
+SELECT * FROM WS..wsTABLE31 WHERE k02String = ''
+
+-- SELECT BY SKU
+SELECT * FROM WS..wsTABLE20 WHERE k02String = ''
+SELECT * FROM WS..wsTABLE21 WHERE k03String = ''
+
+-- SELECT SUM OF QUANTITY & WEIGHT BY SKU
+SELECT SUM(f01TinyInt) AS QTY, SUM(f01Double) AS WEIGHT FROM WS..wsTABLE20 WHERE k02String = ''
+SELECT SUM(f01SmallInt) AS QTY, SUM(f01Double) AS WEIGHT FROM WS..wsTABLE21 WHERE k03String = ''
+
+-- SELECT SUM OF PKB
+SELECT DISTINCT k03String FROM WS..wsTABLE30
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- SEARCH SKU'S IN DB
+SELECT k02String FROM WS..wsTABLE20 WHERE k02String IN ('','','','','')
+SELECT k03String FROM WS..wsTABLE21 WHERE k03String IN ('','','','','')
+
+-- SEARCH FOR DUPLICATE SKU
+SELECT k02String, COUNT(*) AS DUPLICATE FROM WS..wsTABLE20 GROUP BY k02String HAVING COUNT(*) > 1;
+SELECT k03String, COUNT(*) AS DUPLICATE FROM WS..wsTABLE21 GROUP BY k03String HAVING COUNT(*) > 1;
+
+-- SEARCH SURATJALAN MERSY NUMBER 
+SELECT k03String, f01String, f15String FROM WS..wsTABLE21 WHERE f01String = '_PKB_' AND f15String != ''
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- SELECT WAREHOUSE STORAGE LOCATION
+SELECT * FROM TABLEMASTER..TABLE21 WHERE f03String = '5040' ORDER BY f05String DESC
+
+-- SELECT WAREHOUSE STORAGE BOX
+SELECT * FROM TABLEMASTER..TABLE50 WHERE k11String = 'SBOX' ORDER BY k13String
+
+-- SELECT WAREHOUSE COURIER
+SELECT * FROM TABLEMASTER..TABLE50 WHERE k11String = 'COURIER' ORDER BY k13String
+
+-- SELECT WAREHOUSE ALASAN RETUR, REPAIR, LEBUR
+SELECT * FROM TABLEMASTER..TABLE50 WHERE k12String LIKE 'ALASAN%' ORDER BY k13String
+
+-- SELECT WAREHOUSE TOP
+SELECT * FROM TABLEMASTER..TABLE50 WHERE k11String = 'TOP' ORDER BY k13String
+
+-- SELECT WAREHOUSE VENDOR
+SELECT * FROM TABLEMASTER..TABLE50 WHERE k11String = 'VENDOR' ORDER BY k13String
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- INSERT TABLE21 (SLOC PICKER)
+INSERT INTO [dbo].[TABLE21] VALUES(newid(),'MENU','500','WAREHOUSE','5040','Warehouse Storage Location','5040320','Reza','','','STOCK','', 50403,5040320,getdate(),'ARIS','ARISNJP');
+
+-- INSERT TABLE21 (SLOC MARKETING)
+INSERT INTO [dbo].[TABLE21] VALUES(newid(),'MENU','500','WAREHOUSE','5040','WSSLOC-MKT','140215','(SLOC) ALDY','ALDY','','STOCK','', 50404,140215,getdate(),'ARIS','ARISNJP');
+
+-- INSERT TABLE21 (SLOC SALES-KAE)
+INSERT INTO [dbo].[TABLE21] VALUES(newid(),'MENU','500','WAREHOUSE','5040','WSSLOC-KAE','240307','(SLOC) RIFKY ABDILLAH','RIFKY ABDILLAH','','STOCK','', 50402,240307,
+getdate(),'ARIS','ARISNJP');
+
+-- INSERT TABLE50 (STORAGE BOX)
+INSERT INTO [dbo].[TABLE50] VALUES(newid(),'SBOX','Stored Box','SBOX005','A05','','','','',0,0,0,0,0.0,0.0,0.0,getdate(),'3000-01-01','ARIS','','ARIS','')
+
+-- INSERT TABLE50 (COURIER)
+INSERT INTO [dbo].[TABLE50] VALUES(newid(),'COURIER','COURIER','CRR06','TIKI','','','','',0,0,0,0,0.0,0.0,0.0,getdate(),'3000-01-01','ARIS','','ARIS','')
+
+-- INSERT TABLE50 (ALASAN RETUR,REPAIR,LEBUR)
+INSERT INTO [dbo].[TABLE50] VALUES(newid(),'ALxxx','ALASAN xxx','ALxxx000','lainlain','','','','',0,0,0,0,0.0,0.0,0.0,getdate(),'3000-01-01','ARIS','','ARIS','')
+
+-- INSERT TABLE50 (TOP)
+INSERT INTO [dbo].[TABLE50] VALUES(newid(),'TOP','TERM OF PAYMENT','DEPOSIT','TOP03','','','','',0,0,0,0,0.0,0.0,0.0,getdate(),'3000-01-01','ARIS','','ARIS','')
+
+-- INSERT TABLE50 (VENDOR)
+INSERT INTO [dbo].[TABLE50] VALUES(newid(),'VENDOR','VENDOR FINISHGOODS SKK','VENDOR01','ANTAM','VND06','','',0,0,0,0,0.0,0.0,0.0,getdate(),'3000-01-01','ARIS','',
+'ARIS','')
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
