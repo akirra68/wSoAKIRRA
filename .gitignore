@@ -6,3 +6,17 @@
 /GEMINI/bin/Debug/net8.0-windows8.0/win-x64/Files
 /GEMINI/.vs/GEMINI/CopilotIndices/17.13.433.20974/SemanticSymbols.db
 /GEMINI/.vs/GEMINI/CopilotIndices/17.13.433.20974/CodeChunks.db
+/GEMINI/.vs/GEMINI/v17/.suo
+
+# Ignore build output
+**/bin/
+**/obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Debug / Release folders
+Debug/
+Release/
