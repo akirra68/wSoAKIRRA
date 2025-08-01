@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("SKK04USER"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6ccc5834e2db0337b794b56cdc515c7a48cfd2"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2ca934b87889d5321917e59ce1824653f15192c"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("SKK04USER"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("SKK04USER"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

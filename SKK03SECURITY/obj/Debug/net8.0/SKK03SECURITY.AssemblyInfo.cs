@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SKK03SECURITY")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6ccc5834e2db0337b794b56cdc515c7a48cfd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2ca934b87889d5321917e59ce1824653f15192c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SKK03SECURITY")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SKK03SECURITY")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

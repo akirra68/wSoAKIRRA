@@ -18,7 +18,7 @@ Imports System.Reflection
  Assembly: System.Reflection.AssemblyCopyrightAttribute("AKIRRA"),  _
  Assembly: System.Reflection.AssemblyDescriptionAttribute("mrv"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("4.0.2"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc6064173750166e967381edf43442cbc8c457ef"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2ca934b87889d5321917e59ce1824653f15192c"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("GEMINI"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("GEMINI"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

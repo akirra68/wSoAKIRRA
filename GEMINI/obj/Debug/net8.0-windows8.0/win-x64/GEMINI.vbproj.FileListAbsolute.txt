@@ -668,8 +668,11 @@ D:\_tp\wSoAKIRRA-master\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\GEMINI.pdb
 D:\_tp\wSoAKIRRA-master\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\GEMINI.genruntimeconfig.cache
 D:\_tp\wSoAKIRRA-master\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\ref\GEMINI.dll
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\GEMINI.exe
+D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Files\ns_MERSY-SQL-ALL.txt
+D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Files\TEMPLATE_BUP_WSO.xlsx
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Images\skk.png
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Images\wso.png
+D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Images\wso2.png
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\GEMINI.dll.config
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\GEMINI.deps.json
 D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\GEMINI.runtimeconfig.json
@@ -1337,4 +1340,3 @@ D:\_tp\wSo\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\refint\GEMINI.dll
 D:\_tp\wSo\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\GEMINI.pdb
 D:\_tp\wSo\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\GEMINI.genruntimeconfig.cache
 D:\_tp\wSo\GEMINI\obj\Debug\net8.0-windows8.0\win-x64\ref\GEMINI.dll
-D:\_tp\wSo\GEMINI\bin\Debug\net8.0-windows8.0\win-x64\Images\wso2.png
